@@ -1,0 +1,31 @@
+<%-include('include/_header')-%>
+
+<main class="container">
+  <div class="d-flex justify-content-center text-center">
+    
+    
+    
+    <form method="POST" action="/chat" class="border p-4 mt-4 shadow p-3 mb-5 bg-white rounded">
+      <div class="row mb-3">
+        <label for="username" class="col-sm-12 col-form-label">Enter Your Handle</label>
+        <div class="col-md-12">
+          <input type="text" class="form-control " id="username" name="username"/>
+        </div>
+      </div>
+      
+      <div class="row mb-3">
+        <div class="col-sm-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="" id="terms" required />
+            <label class="form-check-label" for="terms">
+              Agree terms and condition
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100"> Enter</button>
+    </form>
+  </div>
+</main>
+
+<%-include('include/_footer')-%>
