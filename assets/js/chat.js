@@ -1,5 +1,5 @@
  //   making connection
- var socket = io.connect("http://localhost:4000");
+ var socket = io.connect("https://instant-mychat.herokuapp.com/");
 
  // Query DOM
  var message =  document.getElementById('message');
@@ -48,3 +48,8 @@ const chatMessage = document.querySelector('.chat-messages');
   feedback.innerHTML = '<p><em>'+data+ ' is typing message...'+'</em></p>'
 })
 
+console.log(handle.value)
+
+var termsAndConditions = document.getElementById('terms');
+
+FormData.addEventListener('submit',(event)=>{})
