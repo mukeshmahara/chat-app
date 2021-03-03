@@ -9,4 +9,4 @@ a Javascript client library for the browser (which can be also run from Node.js)
 
 ## Any help and contribution in the enhancement of app will be appreciated. 
 
-## here you cn get the deployed version of the app https://instant-mychat.herokuapp.com/
+## here you can get the deployed version of the app https://instant-mychat.herokuapp.com/
