@@ -1,48 +1,53 @@
 <%-include('include/_header')-%>
-<h1 class="text-center">Welcome to Socket.io <%=title%></h1>
+<h2 class="text-center">Welcome to Socket.io <%=title%></h2>
 <div class="container">
   <div class="row">
-    <div class="col col-md-12">
-      <div class="card w-100">
+    <div class="col-12">
+      <div class="card">
         <div class="card-body">
           <h5 class="card-title">Chat Application</h5>
           <hr />
-
-          <div id="mero-chat" class="m-3">
-            <div id="chat-window m-4">
-              <div
-                id="output"
-                class="overflow-auto chat-messages p-4 m-3"
-                style="height: 50vh"
-              ></div>
-              <div id="feedback"></div>
-            </div>
+          <div id="chat-window m-4">
+            <div
+              id="output"
+              class="overflow-auto chat-messages p-4 m-3"
+              style="height: 40vh"
+            ></div>
+            <div id="feedback"></div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <div class="fixed-bottom container mr-4">
-            <div class="form-group">
-              <div class="mt-3">
+  <div class="m-4">
+    <div class="row">
+      <div class="col-12 form-group fixed-bottom">
+        <div class="mt-3">
+          <input
+            type="hidden"
+            id="handle"
+            value="<%=username%>"
+            placeholder="Handle"
+          />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <span class="p-2">
                 <input
-                  type="hidden"
-                  id="handle"
-                  class="w-25"
-                  value="<%=username%>"
-                  placeholder="Handle"
+                  type="text"
+                  id="message"
+                  class="col-10 mb-4 messageBox"
+                  placeholder="Message"
                 />
-              </div>
-              <input
-                type="text"
-                id="message"
-                class="mt-3 mb-3 messageBox"
-                placeholder="Message"
-              />
-
-              <button
-                id="send"
-                class="btn btn-outline-secondary text-dark btn-lg"
-              >
-                send
-              </button>
+                <button
+                  id="send"
+                  class="btn btn-outline-secondary text-dark btn-lg"
+                >
+                  send
+                </button>
+              </span>
             </div>
           </div>
         </div>
