@@ -15,6 +15,7 @@
 
 const chatMessage = document.querySelector('.chat-messages');
 
+message.addEventListener('keypress',(event)=>{
  //Emit Event
  btn.addEventListener('click',()=>{
    socket.emit('chat',{
