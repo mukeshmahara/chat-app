@@ -15,10 +15,25 @@ var feedback = document.getElementById("feedback");
 
 const chatMessage = document.querySelector(".chat-messages");
 
-//Emit Event
-btn.addEventListener("click", () => {
-  socket.emit("chat", {
-    handle: handle.value,
+message.addEventListener('keypress',(event)=>{
+
+  if(event.key ==="Enter"){
+    socket.emit('chat',{
+      handle:handle.value,
+     // handle:'you',
+      message:message.value
+      
+    })
+    chatMessage.scrollTop = chatMessage.scrollHeight;
+    message.value = ""
+  }
+  
+})
+
+ //Emit Event
+ btn.addEventListener('click',()=>{
+   socket.emit('chat',{
+     handle:handle.value,
     // handle:'you',
     message: message.value,
   });
