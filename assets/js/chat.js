@@ -30,6 +30,21 @@ message.addEventListener('keypress',(event)=>{
   
 })
 
+message.addEventListener('keypress',(event)=>{
+
+  if(event.key ==="Enter"){
+    socket.emit('chat',{
+      handle:handle.value,
+     // handle:'you',
+      message:message.value
+      
+    })
+    chatMessage.scrollTop = chatMessage.scrollHeight;
+    message.value = ""
+  }
+  
+})
+
  //Emit Event
  btn.addEventListener('click',()=>{
    socket.emit('chat',{
