@@ -30,51 +30,6 @@ message.addEventListener('keypress',(event)=>{
   
 })
 
-message.addEventListener('keypress',(event)=>{
-
-  if(event.key ==="Enter"){
-    socket.emit('chat',{
-      handle:handle.value,
-     // handle:'you',
-      message:message.value
-      
-    })
-    chatMessage.scrollTop = chatMessage.scrollHeight;
-    message.value = ""
-  }
-  
-})
-
-message.addEventListener('keypress',(event)=>{
-
-  if(event.key ==="Enter"){
-    socket.emit('chat',{
-      handle:handle.value,
-     // handle:'you',
-      message:message.value
-      
-    })
-    chatMessage.scrollTop = chatMessage.scrollHeight;
-    message.value = ""
-  }
-  
-})
-
-message.addEventListener('keypress',(event)=>{
-
-  if(event.key ==="Enter"){
-    socket.emit('chat',{
-      handle:handle.value,
-     // handle:'you',
-      message:message.value
-      
-    })
-    chatMessage.scrollTop = chatMessage.scrollHeight;
-    message.value = ""
-  }
-  
-})
-
  //Emit Event
  btn.addEventListener('click',()=>{
    socket.emit('chat',{
@@ -92,17 +47,20 @@ message.addEventListener("keypress", () => {
 // Listen for event
 socket.on("chat", (data) => {
   feedback.innerHTML = "";
-
-  output.innerHTML +=
-    "<p>" + "<strong>" + data.handle + ": </strong> " + data.message + "</p>";
+  addMessage(data, "me")
 });
+
+function addMessage(data, user) {
+  var element = document.createElement("div")
+  element.innerHTML =  data.handle[0] + data.message 
+  element.classList.add("rounded-pill", "card","mb-2",'p-2', "shadow-md")
+  output.append(element)
+}
 
 socket.on("typing", (data) => {
   feedback.innerHTML = "<p><em>" + data + " is typing message..." + "</em></p>";
   topic.innerHTML = data +" is in chat"
 });
-
-console.log(handle.value);
 
 var termsAndConditions = document.getElementById("terms");
 
