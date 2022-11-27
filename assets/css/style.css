@@ -32,5 +32,6 @@
     align-content: center;
 }
 .nav-style:hover{
-        background-color: #525252;
+        background-color: #dbdbdb;
+        cursor: pointer;
 }
