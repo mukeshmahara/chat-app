@@ -1,0 +1,87 @@
+<%-include('../include/_header')-%>
+
+<div class="container-fluid">
+  <div class="row my-3">
+    <div class="col-md-2 overflow-auto">
+      <div class="row">
+        <div class="col-12">
+          <div class="card side-bar">
+            <div class="text-center my-2 shadow bg-secondary p-3">
+              <i
+                class="fa-regular fa-user circle border bg-light shadow rounded-circle p-3 fa-3x"
+              ></i>
+            </div>
+            <div class="navbar d-block overflow-auto">
+              <div
+                class="nav-item nav-style border-left-0 border-right-0 border-top-0 border row d-flex"
+              >
+              <i class="fa-regular fa-address-card col-md-1"></i></i><p class="col-md-9 ">Profile</p>
+              </div>
+              <div
+                class="nav-item nav-style border-left-0 border-right-0 border-top-0 border row"
+              >
+              <i class="fa-solid fa-sliders col-md-1"></i><p class="col-md-9 ">Setting</p>
+              </div>
+              <div
+                class="nav-item nav-style border-left-0 border-right-0 border-top-0 border row"
+              >
+              <i class="fa-solid fa-people-group col-md-1"></i><p class="col-md-9 ">Group</p>
+              </div><div
+              class="nav-item nav-style border-left-0 border-right-0 border-top-0 border row"
+            >
+            <i class="fa-solid fa-video col-md-1"></i><p class="col-md-9 ">Video call</p>
+            </div><div
+            class="nav-item nav-style border-left-0 border-right-0 border-top-0 border row"
+          >
+          <i class="fa-solid fa-phone col-md-1"></i><p class="col-md-9 ">Voice call</p>
+          </div>
+              <div
+                class="nav-item nav-style border-left-0 border-right-0 border-top-0 border row"
+              >
+              <i class="fa-solid fa-image col-md-1"></i><p class="col-md-9 ">Gallary</p>
+              </div>
+              <div
+                class="nav-item nav-style border-left-0 border-right-0 border-top-0 border row"
+              >
+              <i class="fa-solid fa-award col-md-1"></i><p class="col-md-9 ">Rewards</p>
+              </div>
+              <div
+                class="nav-item nav-style border-left-0 border-right-0 border-top-0 border row"
+              >
+              <i class="fa-solid fa-handshake-angle col-md-1"></i><p class="col-md-9 ">Help</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 card main-card overflow-auto">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="graph-box col-md-4">
+              <canvas id="bargraph" class="card m-2 shadow"></canvas>
+            </div>
+            <div class="graph-box col-md-4">
+              <canvas id="donaught" class="card m-2 shadow"></canvas>
+            </div>
+            <div class="graph-box col-md-4">
+              <canvas id="piechart" class="card m-2 shadow"></canvas>
+            </div>
+            <div class="graph-box col-md-4">
+              <canvas id="bubble_chart" class="card m-2 shadow"></canvas>
+            </div>
+            <div class="graph-box col-md-4">
+              <canvas id="line_chart" class="card m-2 shadow"></canvas>
+            </div>
+            <div class="graph-box col-md-4">
+              <canvas id="area_chart" class="card m-2 shadow"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%-include('../include/_footer')-%>

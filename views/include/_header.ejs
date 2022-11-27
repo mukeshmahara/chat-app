@@ -17,6 +17,8 @@
       rel="stylesheet"
     />
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.2/socket.io.js"></script>
 
     <script
@@ -27,5 +29,49 @@
 
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header
+      class="navbar navbar-expand navbar-dark bg-dark flex-column flex-md-row bd-navbar"
+    >
+      <div class="navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/login">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank" rel="noopener"
+              >About</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank" rel="noopener"
+              >Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank" rel="noopener">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+        <button
+          type="button"
+          class="btn btn-danger dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          version
+        </button>
+      </ul>
+    </header>
+  </body>
 </html>
