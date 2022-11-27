@@ -10,3 +10,11 @@ Socket.IO is a library that enables real-time, bidirectional and event-based com
 ## Any help and contribution in the enhancement of app will be appreciated. 
 
 ## here you can get the deployed version of the app https://instant-mychat.herokuapp.com/
+- Dashboard Image
+![image](https://user-images.githubusercontent.com/24635990/204124611-2b071fda-293e-4949-b1d3-69fde90781fc.png)
+
+- Step 1
+![image](https://user-images.githubusercontent.com/24635990/204124671-8120c568-9598-4163-96a6-ac9fb17ebf27.png)
+
+- Chat Dashboard
+![image](https://user-images.githubusercontent.com/24635990/204124689-fc420f4d-de9f-4eb7-b610-b10e66cb6c05.png)
