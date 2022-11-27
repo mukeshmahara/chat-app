@@ -18,3 +18,17 @@ Socket.IO is a library that enables real-time, bidirectional and event-based com
 
 - Chat Dashboard
 ![image](https://user-images.githubusercontent.com/24635990/204124689-fc420f4d-de9f-4eb7-b610-b10e66cb6c05.png)
+
+
+### Let's get started
+- Clone the repo using `git clone https://github.com/mukeshmahara/chat-app.git`
+- Checkout to develop branch using `git checkout develop`
+- Start the Server using `yarn start` or `yarn nodemon start`
+
+-------------------------------------------------------------------Start contributing----------------------------------------------------------------------
+
+Start developing new feature listed in the issue tab.
+
+
+Regard's
+Mukesh Mahara
