@@ -6,8 +6,8 @@ const route = express.Router();
 
 route.post('/chat',service.chatRoute)
 
-route.get('/',service.homeRoute);
-route.get('/dashboard', dashboardController.dashboard);
+route.get('/login',service.homeRoute);
+route.get('/', dashboardController.dashboard);
 
 
 
