@@ -1,12 +1,36 @@
-body{
+
+    body{
     background-color: blanchedalmond;
     font-family: 'Michroma', sans-serif;
-
 }
 
+#mychart{
+    width: 40rem;
+    height: auto;
+}
 .messageBox{
     width: 80%;
     height: 4rem;
+}
 
+.graph-box{
+    height: 300px;
+    margin-bottom: 25px;
+}
 
+.main-card{
+    height: 80vh;
+}
+.side-bar{
+    height: 80vh;
+}
+
+.nav-style{
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    align-content: center;
+}
+.nav-style:hover{
+        background-color: #525252;
 }
