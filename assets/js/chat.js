@@ -1,5 +1,5 @@
 //   making connection
-var socket = io.connect("localhost:4000/");
+var socket = io.connect("https://chatapp-pt93.onrender.com");
 
 // Query DOM
 var chatWindow = document.getElementById("chat-window")
